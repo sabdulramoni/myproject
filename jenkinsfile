@@ -12,7 +12,7 @@ environment {
                 git "${GIT_URL}"
             }
         }
-        stage("build & SonarQube analysis") {
+        stage("SonarQube analysis") {
             steps {
               withSonarQubeEnv('sonar') {
                 sh 'mvn -f SampleWebApp/pom.xml clean package sonar:sonar'
