@@ -19,7 +19,7 @@ environment {
               }
             }
           }
-        stage('Build with Maven') {
+        stage('Builds with Maven') {
             steps {
                 sh 'cd SampleWebApp && mvn clean package'
             }
