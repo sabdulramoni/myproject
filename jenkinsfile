@@ -3,7 +3,7 @@ pipeline {
     
 environment {
         GIT_URL = 'https://github.com/sabdulramoni/myproject.git'
-        TOMCAT_URL    = 'http://18.116.44.87:8080'
+        TOMCAT_URL    = 'http://18.216.88.91:8080'
          }
     
     stages {
