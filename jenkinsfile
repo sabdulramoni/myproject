@@ -12,7 +12,7 @@ environment {
                 git "${GIT_URL}"
             }
         }
-      ('Build with Maven') {
+      stage('Build with Maven') {
             steps {
                 sh 'cd SampleWebApp && mvn clean package'
             }
