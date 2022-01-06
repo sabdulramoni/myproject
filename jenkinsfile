@@ -15,7 +15,7 @@ pipeline {
         stage("SonarQube analysis") {
             steps {
               withSonarQubeEnv('sonar2') {
-                sh 'mvn -f SampleWebApp/pom.xml clean package sonar:sonar'
+                sh 'cd SampleWebApp && mvn clean package sonar:sonar'
               }
             }
           }
